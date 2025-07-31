@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redux Toolkit Front-end Checklist</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f8ff;
+        margin: 0;
+        padding: 2rem;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+      }
+      .section {
+        margin-bottom: 2rem;
+        border-left: 4px solid #3498db;
+        padding-left: 1rem;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+      .section h2 {
+        color: #2980b9;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Redux Toolkit Front-end Checklist ✅</h1>
+
+    <div class="section">
+      <h2>1. Slice Setup</h2>
+      <ul>
+        <li>
+          <input type="checkbox" />Import <code>createSlice</code> from Redux
+          Toolkit
+        </li>
+        <li><input type="checkbox" />Define <code>initialState</code></li>
+        <li>
+          <input type="checkbox" />Create slice with
+          <code>createSlice({ ... })</code>
+        </li>
+        <li><input type="checkbox" />Export the actions</li>
+        <li><input type="checkbox" />Export the reducer</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Store Configuration</h2>
+      <ul>
+        <li><input type="checkbox" />Import <code>configureStore</code></li>
+        <li><input type="checkbox" />Import the slice reducer</li>
+        <li>
+          <input type="checkbox" />Add it to
+          <code>configureStore({ reducer: { ... } })</code>
+        </li>
+        <li><input type="checkbox" />Export the store</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Provider Setup</h2>
+      <ul>
+        <li>
+          <input type="checkbox" />Import <code>Provider</code> from
+          <code>react-redux</code>
+        </li>
+        <li><input type="checkbox" />Import your store</li>
+        <li>
+          <input type="checkbox" />Wrap <code>&lt;App /&gt;</code> in
+          <code>&lt;Provider store={store}&gt;</code>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Component Usage</h2>
+      <ul>
+        <li>
+          <input type="checkbox" />Import <code>useSelector</code> and
+          <code>useDispatch</code>
+        </li>
+        <li><input type="checkbox" />Import actions from slice</li>
+        <li>
+          <input type="checkbox" />Use <code>dispatch()</code> to trigger action
+        </li>
+        <li>
+          <input type="checkbox" />Use <code>useSelector()</code> to access
+          store state
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
